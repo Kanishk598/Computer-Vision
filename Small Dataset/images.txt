@@ -1,1 +1,1 @@
-This is a small set of 20 images, primirarily for testing purposes of the model. Every set of 5 images are of some animals, with first four images in every set having random pictures of animals and fifth one being presented in some or the other popular meme.
+This is a small set of 20 images, primirarily for testing purposes of the model. There are four sets of animals, with first four images in every set having random pictures of animals and fifth one being part of memes.
