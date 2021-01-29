@@ -13,7 +13,7 @@ preprocess = transforms.Compose([transforms.Resize(256), transforms.CenterCrop(2
 
 # %%
 from PIL import Image
-img = Image.open('/home/kanishk/Desktop/Small Dataset/14.jpeg') # Image name is '1.jpeg'. Change it from 1.jpeg to 20.jpeg if you want.
+img = Image.open('Small Dataset/14.jpeg') # Image name is '1.jpeg'. Change it from 1.jpeg to 20.jpeg if you want.
 img.show()
 
 
@@ -27,7 +27,7 @@ batch_t = torch.unsqueeze(img_t, 0)
 resnet.eval()
 out = resnet(batch_t)
 #out
-with open('/home/kanishk/Desktop/dlwpt-code/data/p1ch2/imagenet_classes.txt') as f:
+with open('imagenet_classes.txt') as f:
     labels = [line.strip() for line in f.readlines()]
 _, index = torch.max(out, 1)
 percentage = 100*torch.nn.functional.softmax(out, dim=1)[0]
