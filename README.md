@@ -1,3 +1,6 @@
+Prerequisites:
+PyTorch must be installed. To install PyTorch, do `pip install torch` and `pip install torchvision` in the terminal.
+---------------
 This image recognition program sees images & tells what it sees in the image. 
 To run the script with the given 20 images in the folder SMALL DATASET, use the following command:
 `python Resnet_image_recognition.py 7.jpeg`
