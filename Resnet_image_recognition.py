@@ -3,7 +3,8 @@
 # %%
 import numpy as np
 from torchvision import models, transforms
-
+import sys
+path = 'Small Dataset/' + str(sys.argv[1])
 
 # %%
 resnet = models.resnet101(pretrained=True)
@@ -12,7 +13,7 @@ preprocess = transforms.Compose([transforms.Resize(256), transforms.CenterCrop(2
 
 # %%
 from PIL import Image
-img = Image.open('Small Dataset/1.jpeg') # Image name is '1.jpeg'. Change it from 1.jpeg to 20.jpeg if you want.
+img = Image.open(path)
 img.show()
 
 
